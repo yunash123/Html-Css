@@ -1,0 +1,81 @@
+/* Tamanhos, pesos e larguras */
+
+nao confundir tamanho, peso e lagura !
+ 
+weigth = peso
+width = largura
+heigt = altura
+
+font-weigth: normal;
+pesos de fontes: lighter ,normal , bold bolder(acieto em apenas algumas fontes)
+medias de peso 100~900 (acieto apenas por algumas fontes)
+
+Estilo de fonte 
+font-style: italic;
+
+tambem da para fazer combinaçoes como :
+font-weigth: bolder; ~usado para deixar algumas fontes em negrito ou mais leve
+font-style: italic;
+
+para deixar em sublinhado :
+text-decoration: underline; ~Aceito penas por algumas fontes
+
+h1{
+	font-style: italic;
+	font-weigth: bolder;
+	font-size: 3em;
+	font-family:'Work Sans', sans-serif;
+}
+para simplificar o codigo assima basta usar shorthand font:
+usar na sequencia 
+font-style -> font-weigth -> font-size -> font-family 
+font: italic bolder 3em 'Work sans', sans-serif;
+
+tambem pode ser usando sem algumas funçoes ,mais sempre respetando a ordem :
+h2{
+	font: bolde 2em 'Work Sans';
+}
+
+_____________________________________________________________
+	/* Medidas CSS */	
+
+Medidas absolutas:
+cm, mm, in, px, pt, pc
+
+cm = cemtimetros
+mm = milimetros
+in = Polegadas
+pt = pontos
+pc = paicas 
+px = pixels
+
+Medidas relativas :
+em, ex ,rem ,vw , vh , %
+ 
+em = altura da letra M (MAIUSCULO)
+
+ex = altura da letra x
+a melhor medida para ser utilizada é EM !
+
+								Certo		Errado
+nao pode ter espaço entre os numeros e as medidas examplo = 	1em ,16px	1 em, 16 px
+
+							Certo		Errado
+tambem pode ser usado medidas absolutas examplo = 	0.5em		0,5em
+
+para medidas sempre dever ser utilizado ponto e nao virgula !
+
+a w3c recomenda usar medidas de px ou em
+
+Geralmente 16px = 1em (varia do navegador)
+
+A unidade px é definida para ser pequena, mas visível, e tal como uma linha de 1px de largura,
+
+existe uma boa razão para não usar nem pt nem outra unidade absoluta e usar somente em e px.
+
+
+		Recomendado			Uso ocasional		Não recomendado
+Tela		em, px, %			ex			pt, cm, mm, in, pc
+Impresso	em, cm, mm, in, pt, pc, %	px, ex	
+
+A relação entre as unidades absolutas é: 1in = 2,54cm = 25,4mm = 72pt = 6pc

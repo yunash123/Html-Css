@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinamica</h1>
+    <p>tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+        <picture><!-- observaçao a ordem tem que ser obedecida 
+        
+        -->
+            <source media="(max-width: 750)" srcset="imagens/foto-p.png" type="image/png">
+            <source media="(max-width: 1050)" srcset="imagens/foto-m.png" type="image/png">
+            <img src="imagens/foto-g.png" alt="imagem flexivel">
+        </picture>
+            <h1>reproduzindo audio</h1>
+            <!-- formatos compativeis MP3 WAV OGG , os arquivos WAV são muito pesados é nao é recomendado para o uso em sites , apenas para download !-->
+
+           <!-- <audio src="midias/junhode94.mp3" controls autoplay loop ></audio> -->
+           <!-- o atributo controls vai apresentar o player na tela , caso não seja colocado na tag <audio>, o controle sera transparente e o usuario nao podera interagir com ele
+               O atributo autoplay, quando inserido, vai iniciar a reporoduçao do audio assim que a pagina for carregada
+               
+        -->
+           <!-- preload="metadata" (preload auto so considéra que o site acabo de carrega apos todo o audio estiver carredago ! metadata carrega apenas alguns arquivos e none so carrega apos clicar no play !-->
+           <audio preload="metadata" controls autoplay>
+                <source src="midias/junhode94.mp3" type="audio/mpeg">
+                <source src="midias/junhode94.mp3" type="audio/ogg">
+                <source src="midias/junhode94.mp3" type="audio/wav">
+                <p>infelizmente seu navegador nao consegue reproduzir audio <a href="midias/junhode94.mp3" download="midias/junhode94.mp3" type="audio/mpeg">clique aki para baixar o MP3</a></p>
+            </audio>
+        </body>
+</html>

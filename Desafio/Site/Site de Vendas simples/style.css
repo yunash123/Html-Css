@@ -1,0 +1,57 @@
+* {
+    font-family:Verdana, Geneva, sans-serif;
+    font-size:12px;
+}
+* {
+    font-family:Verdana, Geneva, sans-serif;
+    font-size:12px;
+}
+.menu ul li{
+    background-color: rgb(41, 41, 41);
+    color: aliceblue;
+    float: left;
+    width: 200px;
+    height: 40px;
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    font-size: 30px;
+    border-radius: 3px;
+    position: relative;
+}
+ .menu ul li:hover{
+     background-color: rgb(59, 59, 59);
+
+ }
+ .menu ul{
+     padding: 0px;
+ }
+ .menu ul ul{
+     display: none;
+ }
+ .menu ul li:hover > ul{
+display: block;
+ }
+ .menu ul ul ul{
+     margin-left: 202;
+     top: 0px;
+     position: absolute;
+ }
+body{
+    background-color:rgb(138, 138, 138);
+    margin:0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+div{
+    position: absolute;
+    display: block;
+}
+h1{
+    color: honeydew;
+
+}
+p{
+   enable-background: aliceblue;
+   
+}
